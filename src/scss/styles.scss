@@ -83,3 +83,185 @@ $pesticide-debug-depth: false;
 // $Shame
 // ==========================================================================
 @import 'shame';
+
+
+$bl: #00b0ff;
+$wh: #fff;
+$blk: #000;
+$gry: #a0a0a0;
+
+body{
+	margin: 0;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+.wraper{
+	background-image: url("../img/Hero.png");
+	background-size: cover;
+	with: 100%;
+	height: 700px;
+}
+
+.content{
+	min-width: 320px;
+	max-width: 1200px;
+	width: 100%;
+	padding: 15px;
+	margin: 0 auto;
+
+	header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		ul{
+			display: flex;
+			justify-content: space-between;
+
+			a{
+				text-transform: uppercase;
+				color: $blk;
+				font-size: 0.825em;
+				transition: 0.3s all ease-in;
+				font-family: Montserrat, sans-serif;
+				font-weight: 600;
+
+				&:hover{
+					background-color: $bl;
+					color: $wh;
+				}
+			}
+		}
+	}
+
+	h1{
+		text-align: center;
+		color: $blk;
+		font-family: Montserra;
+		line-height: 0.8em;
+		font-style: italic;
+		margin: 15% 0;
+		font-size: 3.125em;
+		span{
+			color: $wh;
+			font-size: 0.5em;
+		}
+	}
+}
+
+ul{
+	list-style-type: none;
+}
+
+.board{
+	max-width: 1030px;
+	min-width: 320px;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	background-color: $wh;
+	background-image: url(../img/Corner.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-shadow: 0px -8px 30px 0px rgba(0, 0, 0, 0.34);
+	padding: 30px;
+
+}
+
+.img{
+	margin: 20px;
+}
+
+.littleImg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	img{
+		margin: 2px;
+		&:hover{
+			border: 2px solid $bl !important;
+		}
+	}
+
+	.active{
+		border: 2px solid $bl !important;
+	}
+}
+
+.info{
+	width: 50%;
+	padding: 0 40px;
+	h2{
+		font-size: 1.25em;
+		font-weight: 800;
+		font-family: Montserrat;
+		line-height: 1.1em;
+		margin: 0;
+		color: $blk;
+	}
+
+	.bottom-info{
+		display: flex;
+		align-items: center;
+		p{
+			font-family: Montserrat;
+			font-weight: 700;
+			font-size: 1.5em;
+		}
+
+		a{
+			color: $wh;
+			padding: 10px 20px;
+			background-color: $bl;
+			text-transform: uppercase;
+			font-size: 0.875em;
+			margin: 30px;
+		}
+	}
+
+	.view{
+		color: $bl;
+		text-decoration: underline;
+		padding: 0;
+	}
+}
+
+.tabs{
+	section{
+		display: none;
+	}
+
+	label{
+		color: $gry;
+		text-transform: uppercase;
+		padding: 10px 40px 10px 0;
+		border-bottom: 3px solid $gry;
+		font-family: Raleway;
+		font-weight: 700;
+	}
+
+	input{
+		display: none;
+		position: absolute;
+	}
+
+	label{
+		display: inline-block;
+	}
+}
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3{
+	display: block;
+}
+
+#tab1:checked+label, #tab2:checked+label, #tab3:checked+label{
+	color: $blk;
+	border-bottom: 3px solid $bl;
+}
