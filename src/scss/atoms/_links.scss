@@ -1,0 +1,55 @@
+a{
+  text-decoration: none;
+  transition: all ease-in 0.3s;
+}
+
+.link-padding{
+  padding: 5px 10px;
+}
+
+.nav-link{
+  text-transform: uppercase;
+  color: $blk;
+  font-size: 0.825em;
+  font-weight: 600;
+
+  &:hover{
+    background-color: $bl;
+    color: $wh;
+  }
+}
+
+.button-link{
+  color: $wh;
+  padding: 10px 20px;
+  background-color: $bl;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  margin: 30px;
+  &:hover{
+    background: $wh;
+    border-color: $bl;
+    color: $bl;
+  }
+}
+
+
+.underline-link{
+  color: $bl;
+  text-decoration: underline;
+  padding: 0;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.social-links{
+  background-color: $blk;
+  margin: 10px;
+  padding: 12px 12px 10px 12px;
+  border-radius: 20px;
+  &:hover{
+    background-color: $bl;
+  }
+}

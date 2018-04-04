@@ -1,0 +1,23 @@
+.img{
+  margin: 20px;
+}
+
+.littleImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.img-board-view {
+  margin: 2px;
+  border: 2px solid transparent;
+  box-sizig: border-box;
+  transition: all .4s ease;
+  &:hover {
+    border: 2px solid $bl;
+  }
+
+  &.active {
+    border: 2px solid $bl;
+  }
+}
