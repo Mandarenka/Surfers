@@ -1,1 +1,1 @@
-Simple starter with Gulp and Webpack
+Page template
