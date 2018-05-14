@@ -1,0 +1,19 @@
+.footer{
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
+}
+
+.footer-top{
+  grid-area: 1/1/3/3;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.footer-black{
+  grid-area: 2/1/3/3;
+  background-color: $blk;
+}

@@ -1,0 +1,42 @@
+.subscribe{
+  width: 300px;
+  color: $wh;
+  font-family: Montserrat;
+  grid-area: 2/2/3/3;
+  margin: 20px 40px;
+}
+
+.subscribe-i{
+  border: none;
+  border-bottom: 1px solid #4d4d4d;
+  background-color: transparent;
+  font-family: Raleway;
+  color: #4d4d4d;
+  font-size: 14px;
+  width: 100%;
+  padding: 6px 0;
+
+  &:focus{
+    border-color: $wh;
+    color: $wh;
+  }
+}
+
+.submit{
+  color: $wh;
+  background-color: $bl;
+  font-size: 12px;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+  margin-left: -27px;
+  border-radius: 15px;
+  transition: 0.3s all ease;
+
+  &:hover{
+    border-color: $wh;
+    background-color: transparent;
+  }
+}
+
+
+

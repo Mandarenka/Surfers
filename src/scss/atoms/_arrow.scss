@@ -1,0 +1,18 @@
+.arrow{
+  padding: 10px 13px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  &:hover{
+    background-color: $bl;
+    color: $wh;
+    border-color: transparent;
+  }
+}
+
+.arrow-wraper{
+  display: flex;
+  align-items: center;
+}

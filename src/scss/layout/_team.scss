@@ -1,0 +1,5 @@
+.team-wraper{
+  display: grid;
+  grid-template-columns: 42px repeat(4, 1fr) 42px;
+  //margin-top: 10%!important;
+}

@@ -10,7 +10,7 @@ a{
 .nav-link{
   text-transform: uppercase;
   color: $blk;
-  font-size: 0.825em;
+  font-size: 13px;
   font-weight: 600;
 
   &:hover{
@@ -25,13 +25,17 @@ a{
   background-color: $bl;
   border: 1px solid transparent;
   text-transform: uppercase;
-  font-size: 0.875em;
+  font-size: 14px;
   margin: 30px;
   &:hover{
     background: $wh;
     border-color: $bl;
     color: $bl;
   }
+}
+
+.button-wraper{
+  text-align: center;
 }
 
 
@@ -52,4 +56,50 @@ a{
   &:hover{
     background-color: $bl;
   }
+}
+
+
+.camera{
+  color: $bl;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.follow{
+  grid-column: 1/3;
+  background-color: $wh;
+  padding: 20px;
+  color: $blk;
+}
+
+.wave-link{
+  color: $wh;
+  font-size: 14px;
+  line-height: 34px;
+  font-family: Raleway;
+}
+
+.f-button{
+  background-color: #f6f7f9;
+  color: #4b4f56;
+  padding: 5px;
+  font-size: 12px;
+  margin: 8px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.f-button-like:before{
+  content: url(../img/FB-icon.png);
+}
+
+.f-button-share:before{
+  content: url(../img/Share-icon.png);
+}
+
+
+.f-buttons-wraper{
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,0 +1,41 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.stars{
+  border: none;
+  padding: 10px 0;
+  width: 128px;
+}
+
+input[name='rating']{
+  display: none;
+}
+
+.stars-l:before{
+  font-family: FontAwesome;
+  margin-right: 5px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.stars-l{
+  color: $gry;
+  float: right;
+}
+
+.full:before{
+  content: "\f005";
+}
+
+.half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.stars-i:checked ~ .stars-l, .stars-l:hover ~ .stars-l, .stars-l:hover{
+  color: yellow;
+}
+
+/*.stars-i:checked + .stars-l:hover, .stars-l:checked ~ .stars-l:hover{
+  color: $gry;
+}*/
+
